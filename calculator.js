@@ -3,9 +3,6 @@ let displayLast = document.querySelector('.last');
 let bodyButtons = document.getElementById('body-buttons')
 
 
-bodyButtons.addEventListener('click', calFunction.checkButtonType)//added eventListener for click.
-bodyButtons.addEventListener('touch', calFunction.checkButtonType)//added eventListener for touch.
-
 
 let calFunction = {//object to hold all function of the calculator.
     
@@ -78,4 +75,7 @@ let calFunction = {//object to hold all function of the calculator.
         return
     }
 }
+
+bodyButtons.addEventListener('click', calFunction.checkButtonType)//added eventListener for click.
+bodyButtons.addEventListener('touch', calFunction.checkButtonType)//added eventListener for touch.
 
