@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    
+}
+.main{
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cal-body{
+    padding:0.5vw 0.5vw;
+    border-radius: 2vh;
+    border: .1vw solid #a5a4a4;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    height: 80vh;
+    width:80vw;
+    grid-template-rows: minmax(80px,2fr) minmax(200px,5fr);
+    grid-template-columns: minmax(150px,1fr);
+   
+    grid-gap: 1vw;
+}#display{
+    height: auto;
+    width: auto;
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:space-around;
+    overflow: hidden;
+}
+.last{
+    
+    color: rgb(56, 54, 54);
+    font-size: 5vh;
+    transition:color 12s;
+    transition:font-size .1s;
+}
+.current{
+    color:black;
+    font-size: 10vh;
+}
+.cal-body-items{
+    border-radius: 1vh;
+    border:.1vw solid #a5a4a4;
+     height: 100%;
+     width: 100%;
+     background-color: rgb(236, 236, 236);
+}
+#body-buttons{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    align-items: stretch;
+    justify-items: stretch;
+    padding:.3vw;
+    grid-gap: 1vw;
+}
+.buttons{
+   display: flex;
+   border-radius: 10px;
+   align-items: center;
+   justify-content: center;
+    background-color: rgb(209, 217, 243);
+    
+}
+.operator{
+    background-color: rgb(160, 173, 180);
+    
+}
+.buttons:nth-child(1),.buttons:nth-child(2),.buttons:nth-child(3){
+    grid-row-start: 2;
+}
+.buttons:nth-child(4),.buttons:nth-child(5),.buttons:nth-child(6){
+    grid-row-start: 3;
+}
+.buttons:nth-child(7),.buttons:nth-child(8),.buttons:nth-child(9){
+    grid-row-start: 4;
+}
+
+.buttons:nth-child(10){
+    grid-row-start: 5;
+    grid-column-start: 2;
+}
+.buttons:nth-child(11),.buttons:nth-child(16){
+    grid-row-start: 5;
+}
+.buttons:nth-child(17) ,.buttons:nth-child(18){
+    grid-row-start: 1;
+}
+
+.buttons:nth-child(19) ,.buttons:nth-child(20){
+    grid-row-start: 1;
+}
+.buttons:hover{
+    opacity: .8;
+    color:black;
+    cursor: pointer;;
+}
+.big{
+    
+    font-size: 1.5rem;
+}
+
+
